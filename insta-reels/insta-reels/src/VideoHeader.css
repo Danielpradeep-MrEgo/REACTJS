@@ -1,0 +1,14 @@
+.videoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  /*when you give pos-absol we have to give width 100%*/
+  width: 98%;
+  color: white;
+}
+
+
+.videoHeader > * {
+    padding: 10px
+}

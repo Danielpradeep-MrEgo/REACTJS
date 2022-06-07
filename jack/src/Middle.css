@@ -1,0 +1,25 @@
+.middle {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.57);
+  flex-direction: column;
+  flex: 1;
+  height: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.middle__container {
+  background-color: rgba(81, 104, 102, 0.631);
+  padding-left: 10px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-right: 300px;
+}
+
+.button {
+  display: flex;
+}

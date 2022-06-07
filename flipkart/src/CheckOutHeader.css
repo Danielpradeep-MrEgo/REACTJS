@@ -1,0 +1,35 @@
+.checkOut {
+  display: flex;
+  background-color: #f1f3f6;
+  justify-content: space-between;
+}
+
+.checkOut__right {
+  display: flex;
+  grid-column: 1/1;
+  height: 0px;
+  background-color: #ffffff;
+  padding: 30px;
+  /* flex: 0.55; */
+  width: 100%;
+  margin-left: 120px;
+  margin-top: 25px;
+  border-bottom: 1px solid lightgray;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  justify-items: center;
+}
+
+/* .checkOut__left {
+  display: flex;
+  flex: 0.30;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding-left: 40px;
+} */

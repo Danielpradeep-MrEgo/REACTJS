@@ -1,0 +1,37 @@
+.videoSidebar {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  color: white;
+}
+
+.videoSidebar__button {
+  /* padding: 7px; */
+  margin: 10px;
+  transform-box: fill-box;
+  position: sticky;
+}
+
+.red {
+  color: red;
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+
+@keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.fa__comment {
+  /* color: #BE4BDB; */
+}

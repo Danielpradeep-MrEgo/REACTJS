@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  transition: opacity 0.5s linear;
+}
+
+.banner__imageOne {
+  display: flex;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.banner__imageTwo {
+  display: flex;
+  width: 100%;
+  margin-left: 10px;
+  /* here rgba 0,0,0,1 is here 1 is opacity 1 at top
+    and rgba 0,0,0,0 here 0 is opacity 0 at bottom */
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+  z-index: -1;
+  /* margin-bottom: -150px; */
+}

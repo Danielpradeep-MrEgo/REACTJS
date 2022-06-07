@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  background-color: #2874f0;
+  padding: 1vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  width: 7%;
+  margin-left: 190px;
+  object-fit: contain;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.header__plus {
+  color: #ffe500;
+  font-weight: 500;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: -1px;
+  margin-left: 3px;
+}
+
+.header__text > img {
+  width: 10%;
+  margin-left: 3px;
+}
+
+.header__text {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  font-style: italic;
+  margin-top: -6px;
+  color: white;
+}
+
+
+.header__login {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  outline-width: 0;
+}
+
+.header__optionTwo {
+  color: #2874f0;
+}
+
+
+.header__login > button {
+  width: auto;
+  height: 37px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+}
+
+.header__login > button > h3 {
+  color: #2874f0;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  width: max-content;
+}
+
+
+.header__search {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* margin-top: -20px; */
+  width: 50%;
+  /* margin-left: -200px; */
+  /* margin-left: auto; */
+}
+
+.header__searchInput  {
+  width: 70%;
+  height: 35px;
+  font-size: 14px;
+  align-items: center;
+  border: none;
+  outline-width: 0;
+  /* border-radius: 1px; */
+}
+
+.header__searchIcon {
+  background-color: white;
+  height: 30px;
+  color: #2874f0;
+  padding: 7px;
+  border:1px solid white;
+  padding: 5.3px;
+  margin-left: -10px;
+}
+
+.header__more {
+  display: flex;
+  color: #fff;
+
+}
+
+.header__more > h3 {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.header__icon {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin-right: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__icon > h3 {
+  margin: 4px;
+}
+
+.header__link {
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+fffb26e0039aec748510059892f97df0
+
+
+yarn add axios
+
+yarn add @material-ui/core
+yarn add @material-ui/icons
+
+yarn add react-text-truncate
+
+
+yarn add react-flip-move
+
+firebase init

@@ -1,0 +1,23 @@
+@media screen and (min-width: 300px) {
+  .right {
+    display: none;
+  }
+  .right__main {
+    /* padding: 10px; */
+  }
+}
+@media screen and (min-width: 501px) {
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    top: 40;
+    padding-left: 50px;
+  }
+
+  .right__main {
+    display: flex;
+    flex: 0.4;
+    background-color: rgb(0, 0, 0);
+  }
+}

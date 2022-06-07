@@ -1,0 +1,194 @@
+// import React from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import "./App.css";
+import {
+  BrowserRouter,
+  Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
+import Profile from "./Profile";
+import VideoFooterIcon from "./VideoFooterIcon";
+import VideoFooter from "./VideoFooter";
+import VideoPlayer from "./VideoPlayer";
+import Chat from "./Chat";
+import WebcamStreamCapture from "./Add";
+import Search from "./Search";
+import VideoSidebar from "./VideoSidebar";
+import Video from "./Video";
+import axios from "./axios";
+export const UserContext = createContext();
+
+
+const [videos, setVideos] = useState([]);
+
+useEffect(() => {
+  async function fetchPosts() {
+    const response = await axios.get("/v2/posts");
+    setVideos(response.data);
+
+    return response;
+  }
+
+  fetchPosts();
+}, []);
+
+const Routing = () => {
+  const history = useHistory();
+  const { state, dispatch } = useContext(UserContext);
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      dispatch({ type: "USER", payload: user });
+    } else {
+      if (!history.location.pathname.startsWith("/reset"))
+        history.push("/signin");
+    }
+  }, []);
+  return (
+    <Switch>
+      <div className="app__videos">
+        <Route path="/videoplayer">
+          {videos.map(
+            ({
+              url,
+              likes,
+              shares,
+              messages,
+              avatar,
+              song,
+              description,
+              channel,
+            }) => (
+              <Video
+                avatar={avatar}
+                url={url}
+                channel={channel}
+                song={song}
+                likes={likes}
+                messages={messages}
+                description={description}
+                shares={shares}
+              />
+            )
+          )}
+          <VideoFooterIcon />
+        </Route>
+
+        <Route path="/chat">
+          <Chat />
+          <VideoFooterIcon />
+        </Route>
+
+        <Route path="/search">
+          <Search />
+          <VideoFooterIcon />
+        </Route>
+
+        <Route path="/add">
+          <WebcamStreamCapture />
+          <VideoFooterIcon />
+        </Route>
+
+        <Route path="/profile">
+          <Profile />
+          <VideoFooterIcon />
+        </Route>
+      </div>
+    </Switch>
+  );
+};
+function App() {
+
+
+  // const [videos, setVideos] = useState([]);
+  // const [profiles, setProfiles] = useState([]);
+
+  // useEffect(() => {
+  //   async function fetchPosts() {
+  //     const response = await axios.get("/v2/posts");
+  //     setVideos(response.data);
+
+  //     return response;
+  //   }
+
+  //   fetchPosts();
+  // }, []);
+
+  // useEffect(() => {
+  //   async function fetchPosts() {
+  //     const response = await axios.get("/v2/posts");
+  //     setProfiles(response.data);
+  //     return response;
+  //   }
+  //   fetchPosts();
+  // }, []);
+
+  return (
+    // <Router>
+      // <div className="app">
+        {/* <Switch>
+          <div className="app__videos">
+            <Route path="/videoplayer">
+              {videos.map(
+                ({
+                  url,
+                  likes,
+                  shares,
+                  messages,
+                  avatar,
+                  song,
+                  description,
+                  channel,
+                }) => (
+                  <Video
+                    avatar={avatar}
+                    url={url}
+                    channel={channel}
+                    song={song}
+                    likes={likes}
+                    messages={messages}
+                    description={description}
+                    shares={shares}
+                  />
+                )
+              )}
+
+              {/* <VideoPlayer/> */}
+        {/* <VideoSidebar likes={likes} messages={messages} shares={shares} /> */}
+        {/* <VideoSidebar/> */}
+        {/* <VideoFooterIcon /> */}
+        {/* </Route>
+
+            <Route path="/chat">
+              <Chat />
+              <VideoFooterIcon />
+            </Route>
+
+            <Route path="/search">
+              <Search />
+              <VideoFooterIcon />
+            </Route>
+
+            <Route path="/add">
+              <WebcamStreamCapture />
+              <VideoFooterIcon />
+            </Route>
+
+            <Route path="/profile"> */}
+        {/* <Profile channel={channel} avatar={avatar} /> */}
+        {/* {profiles.map(({ channel, avatar }) => (
+                <Profile channel={channel} avatar={avatar} />
+              ))} */}
+        {/* <Profile />
+              <VideoFooterIcon />
+            </Route>
+          </div>
+        </Switch>  */}
+      // </div>
+    // </Router>
+  // );
+}
+
+export default App;

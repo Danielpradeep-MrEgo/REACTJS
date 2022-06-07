@@ -1,0 +1,32 @@
+.nav {
+    display:flex;
+    margin: 10px;
+    background-color: #fff;
+    color: #212121;
+    text-align: center;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+    /* justify-content: space; */
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+    padding: 5px;
+    /* margin-left: 70px; */
+    letter-spacing: 0;
+    /* padding: 0.5vh; */
+    object-fit: fill;
+    padding-bottom: 3px;
+    border-bottom: 1px solid hsla(0,0%,100%,.5);
+    white-space: normal;
+}
+
+.nav > h4 {
+    /* font-weight: 200; */
+    margin-left: 60px;
+    display: flex;
+    /* object-fit: contain; */
+    padding: 0.1vh;
+}
+
+.nav > h4:hover {
+    color: #2874f0;
+}

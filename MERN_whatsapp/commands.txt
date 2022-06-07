@@ -1,0 +1,17 @@
+/////for backend
+
+
+npm init
+
+npm install express mongoose
+
+
+npm -g install nodemon,
+npm install nodemon &&
+nodemon --inspect server.js
+
+
+npm install pusher
+npm install cors
+
+N5NcGVjLgNt51IJo

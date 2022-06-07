@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  /* margin-left: 0px; */
+  /* transform-box: fill-box; */
+  /* left: 0; */
+  /* transform-origin: center; */
+}
+
+.header__logo {
+  display: flex;
+  text-decoration: none;
+  /* position: sticky; */
+  align-items: center;
+  /* justify-content: center; */
+  position: absolute;
+  height: 20px;
+  margin-left: -40px;
+  padding-top: 30px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.header__text {
+    border-width: px solid black;
+}
+
+.text {
+  color: rgb(253, 253, 253);
+  margin-top: 10px;
+  margin-left: -40px;
+  /* border: black; */
+  border-width: 10px solid black;
+  height: 30px;
+  font-weight: 900;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.logo {
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 4s ease-in-out infinite;
+}

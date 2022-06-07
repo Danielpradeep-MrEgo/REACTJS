@@ -1,0 +1,77 @@
+.videoFooter {
+  position: relative;
+  margin-left: 15px;
+  bottom: 100px;
+  padding-bottom: 10px;
+}
+.videoFooter__text {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.videoFooter__text > h3 {
+  margin-left: 10px;
+  padding-bottom: 40px;
+}
+
+.videoFooter__text > h3 > Button {
+  color: white;
+  font-weight: 900;
+  /* materail ui default set uppercase here inherit will grab the parent 
+    component inhertance*/
+  text-transform: inherit;
+}
+
+.videoFooter__ticker > .ticker {
+  height: fit-content;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.videoFooter__ticker h1 {
+  padding-top: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+.videoFooter__icon {
+  position: absolute;
+  left: 5px;
+  color: white;
+  padding-top: 9px;
+}
+
+.videoFooter__actions {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  color: white;
+  justify-content: space-between;
+}
+
+.videoFooter__actionsLeft {
+    padding-top: 15px;
+}
+
+.videoFooter__actionsLeft > .MuiSvgIcon-root {
+  padding: 0 10px;
+}
+
+.videoFooter__actionsRight {
+  display: flex;
+  padding-top: 15px;
+}
+
+.videoFooter__stat {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.videoFooter__stat > p {
+  margin-left: 3px;
+}

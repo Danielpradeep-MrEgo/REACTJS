@@ -1,0 +1,22 @@
+
+.add__cam {
+    display: flex;
+    width: 100%;
+    height: 720px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    top: 0;
+}
+
+
+.add__cam > button {
+    position: absolute;
+}
+
+.add__cam::-webkit-scrollbar {
+    display: none;
+  }
+  

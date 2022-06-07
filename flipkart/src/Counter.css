@@ -1,0 +1,26 @@
+.counter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    margin-left: 5px;
+}
+
+
+.font {
+    color: #ffffff;
+    /* color: #FFC109; */
+    align-content: center;
+}
+
+.counter > span {
+    /* color: #ffffff; */
+    color: #FFC109;
+    /* color: black; */
+    position: absolute;
+    margin-left: 3.5px;
+    align-content: center;
+}
+.counter > span > h4 {
+    font-weight: 500;
+}

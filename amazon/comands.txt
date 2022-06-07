@@ -1,0 +1,29 @@
+
+npm install react-router-dom
+
+npm install @material-ui/core
+
+npm install @material-ui/core
+
+
+npm install react-currency-format
+
+
+npm install @stripe/stripe-js
+npm install @stripe/react-stripe-js
+
+
+npm install axios
+
+https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global_bluebeacon-V3-1x_optimized._CB468962293_.png
+
+
+//firebase backend codes
+firebase init
+
+npm install express
+
+npm install cors
+npm install stripe
+
+firebase emulators:start

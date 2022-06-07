@@ -1,0 +1,124 @@
+.login {
+	display: flex;
+	margin-top: 80px;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.login__div {
+	box-shadow: 1px 1px 9px;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2874f0;
+	height: 500px;
+	width: 300px;
+}
+
+.login__bigcap {
+	text-decoration: none;
+	display: flex;
+	font-size: xx-large;
+	color: white;
+	font-weight: 500;
+	margin-left: -150px;
+	padding: 30px;
+}
+
+.login__ptag {
+	text-decoration-line: none;
+	color: lightgray;
+	align-content: flex-start;
+	width: 160px;
+	margin-left: -70px;
+	margin-top: -100px;
+}
+
+.login__image {
+	padding: 50px;
+}
+
+.login__form {
+	display: flex;
+	box-shadow: 2px 1px 9px;
+	background-color: #ffffff;
+	flex-direction: column;
+	padding: 40px;
+	width: 20%;
+}
+
+.login__input {
+	width: 100%;
+	border: none;
+	height: 50px;
+	justify-content: space-around;
+	outline-width: 0;
+	font-size: medium;
+	font-weight: 500;
+	border-color: #ff6161;
+	border-bottom-width: 2px;
+}
+
+.login__input::-webkit-input-placeholder {
+	font-size: x-small;
+	top: 20%;
+	left: 50%;
+	transform: translate(0%, -20%);
+	background: linear-gradient(to left, black, grey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.login__input:focus {
+	font: 400 13.3333px Arial;
+	position: relative;
+	transform: translate(0%, -20%);
+	background: linear-gradient(to left, black, grey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: linear 0.2s;
+	-webkit-writing-mode: horizontal-tb !important;
+	color: -internal-light-dark(black, white);
+}
+.login__input::placeholder {
+	font-size: small;
+	/* top: 20%;
+  left: 50%; */
+	background: linear-gradient(to left, black, grey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.login__formp {
+	margin-top: 20px;
+}
+
+.login__form > button {
+	color: white;
+	background-color: #fb641b;
+	width: 100%;
+	height: 45px;
+	border: none;
+	border-radius: 3px;
+	font-size: medium;
+	margin-top: 40px;
+	cursor: pointer;
+	outline-width: 0;
+}
+
+.login__form > button {
+	width: 300px;
+	background-color: #fb641b;
+	color: #eff2f5;
+	font-weight: 800;
+	margin-left: 30px;
+}
+
+.login__form > button:hover {
+	background-color: orange;
+	color: #ffffff;
+}

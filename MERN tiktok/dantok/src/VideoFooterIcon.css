@@ -1,0 +1,75 @@
+.videoFooterIcon {
+  display: flex;
+  color: white;
+  max-width: auto;
+  background-color: black;
+  position: fixed;
+  bottom: 3%;
+  margin: 10px;
+  transform-box: fill-box;
+  position: sticky;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border-style: inset;
+  border-color: lightcoral;
+  border-radius: 3px;
+}
+
+.footer__bottom {
+  /* bottom: 0; */
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+.icons__add {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 50px;
+    border-radius: 10px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-style: inset;
+    border-width: 4px;
+    border-right-color: red;
+    border-left-color: rgb(7, 243, 231);
+}
+
+.icons__add {
+    /* background: transparent; */
+    /* color: var(--clr-primary-5); */
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  /* .icons__add:hover {
+    color: var(--clr-primary-7);
+  } */
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+.icons {
+    cursor: pointer;
+    color: white;
+}
+
+.icons__adds {
+  color: black;
+  display: flex;
+  padding-top: 5px;
+}

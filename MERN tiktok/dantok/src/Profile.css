@@ -1,0 +1,227 @@
+.profile {
+  /* display: grid; */
+  /* place-items: center; */
+  background-color: #ffffff;
+  /* background-color: black; */
+  /* height: 700px; */
+  /* width: 100%; */
+  /* max-width: 500px; */
+  /* border-radius: 20px; */
+  /* overflow: scroll; */
+  /* scroll-snap-type: y mandatory; */
+}
+.animate {
+  display: grid;
+  place-items: center;
+  /* background-color: #ffffff; */
+}
+
+.profile::-webkit-scrollbar {
+  display: none;
+}
+
+.profile__header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  border-width: thin;
+  padding-top: 20px;
+  /* color: white; */
+
+}
+
+.profile__avatar {
+  margin-top: -51px;
+  object-fit: fill;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  background-color: black;
+  height: 150px;
+  justify-items: center;
+  display: flex;
+  place-items: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.loader {
+  /* position: absolute; */
+  display: grid;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.9s linear infinite;
+}
+.loader span {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.9s linear infinite;
+}
+
+.loader span:nth-child(1) {
+  filter: blur(5px);
+}
+.loader span:nth-child(2) {
+  filter: blur(10px);
+}
+.loader span:nth-child(3) {
+  filter: blur(25px);
+}
+.loader span:nth-child(4) {
+  filter: blur(50px);
+}
+.loader:after {
+  position: absolute;
+  content: "";
+  /* top: 10px; */
+  /* left: 10px; */
+  /* right: 10px; */
+  /* place-items: center;
+  align-items: center;
+  display: flex; */
+  /* bottom: 10px; */
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.loader > span {
+  display: grid;
+  place-items: center;
+  /* padding-top: 10px; */
+  align-items: center;
+  /* font-weight: 300; */
+  /* font-size: small; */
+  /* color: black; */
+  /* color: #ffffff; */
+  /* background-color: black; */
+}
+.profile__avatar > h5 {
+  display: grid;
+  place-items: center;
+  padding-top: 10px;
+  align-items: center;
+  font-weight: 500;
+  font-size: small;
+  /* color: #e6955f; */
+  /* color: white; */
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+/* .icons__add:hover {
+    color: var(--clr-primary-7);
+  } */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.profile__row {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  flex: 0.3;
+  padding-top: 50px;
+  margin: 20px;
+  /* color: white; */
+}
+
+.profile__row > Button {
+  background-color: #ff385c;
+  color: #ffffff;
+  text-transform: inherit !important;
+  margin: 10px;
+}
+
+.profile__row > Button:hover {
+  background-color: #ff385c;
+}
+
+.p {
+  display: flex;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  flex: 0.3;
+  padding-top: 50px;
+  margin: 30px;
+  /* color: white; */
+}
+.profile__section {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  background-color: rgb(19, 19, 18);
+  align-items: center;
+  padding-bottom: 20px;
+  /* color: white; */
+}
+
+.profile__sectionPhoto > img {
+  border-radius: 10px;
+  height: 150px;
+  width: 140px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.p__end {
+  display: flex;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  margin: 30px;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 10px;
+  /* color: white; */
+}
+
+.profile__tags {
+  display: flex;
+  justify-content: space-evenly;
+  /* color: white; */
+}
+
+.profile__tagsP {
+  /* color: white; */
+  text-align: center;
+}
